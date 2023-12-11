@@ -1,0 +1,135 @@
+NOMBRE DEL ALGORITMO: "Hora futura"
+
+ENTRADAS: Dos numeros que harán referencia a la hora actual y h cantidad de horas transcurridas
+
+SALIDA: La hora pasadas las h horas ingresadas
+
+PASOS:
+	1. leer la hora actual y el número de horas transcurridas
+	2. validar que la hora actual ingresada no sea mayor a 24
+	3. si la validación anterior es negativa muestro un mensaje que notifique que     				
+	   debe ingresar una hora valida y vuelvo a solicitar el ingreso de la hora
+	4. realizo una conversión de la hora ingresada a número decimal dividiendo entre 60
+	   los minutos restantes de la hora ingresada
+	5. realizo la misma conversión con las horas transcurridas
+	6. realizo la suma de la hora actual y las horas trasncurridas 
+	7. valido que esa suma no sea mayor a 24
+	8. Si es mayor a 24 divido el resultado de la sumatoria entre 24 para saber cuantos días
+	   han transcurrido
+	9. le resto el resultado de esa division al resultado de la sumatoria entre hora actual
+	   y horas trancurridas
+	10.multiplico los valores decimales de esa resta por 24
+	11. muestro el resultado de esa ultima multiplicación
+	
+///////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	
+NOMBRE DEL ALGORITMO: "Que nota necesito"
+
+ENTRADAS: Dos notas relacionadas a los dos primeros certamenes
+
+SALIDA: nota necesaria para el tercer certamen
+
+PASOS: 
+	1. leer las notas de los primeros certamenes
+	2. validar que esas notas no sean mayor a 100
+	3. si la validacion es verdadera realizo la operación 
+	   (3(60-(Nota lab*0.3)-((certamen 1*0.7)/3)*-((certamen 2*0.7)/3)))/0.7
+	4. el valor de esa operación la muestro con un mensaje que diga "es la nota minima
+	   que puede sacar en el certamen 3 para aprobar con 60"
+	   
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOMBRE DEL ALGORITMO :"Número invertido"
+
+ENTRADAS: un número entero de tres digitos
+
+SALIDA: un número entero de tres digitos
+
+PASOS:
+    1. Leer un número entero de tres digitos
+    2. Validar que el número sea mayor que 99 y menor que 999
+    3. Divido el numero entero en 10 y tomar el residuo de esta operacion
+    4. Pongo el numero resultante en orden de llegada
+    5. Se repite el proceso 3 y 4 hasta llegar a un residuo de cero, en ese caso tomar el cociente y colocar el numero de ultimas
+    6. Se muestra el numero resultante en el orden en que se van operando
+
+    
+    
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOMBRE DEL ALGORITMO : "Años bisiestos"
+
+ENTRADAS: Un número entero que referente al año
+
+SALIDA: Un texto que me indica si es o no un año bisiesto
+
+Pasos: 
+    1. leer un número entero referente a un año
+    2. Se verifica si el numero es mayor a 1582, Si lo es se divide en 100 y si su residuo es igual a 0(Si no es 0 pasa al paso 4), se        divide en 400 y si residuo es igualmente 0 es un año bisiesto
+    4. El numero entero se divide en 4 y si su residuo es igual a 0 es un año bisiesto
+    5. Se verifica si cumple una de las 2 anteriores condiciones, si no cumple alguna de las 2 no es un año bisiesto
+    6. Se muestra si el año es bisiesto o no, como se dedujo en el punto 5
+    
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOMBRE DEL ALGORITMO: "Edad"
+
+ENTRADAS: tres números enteros referentes al día, mes y año de nacimiento
+
+SALIDA: un número referente a la edad
+
+PASOS: 
+    1. Leo el año de nacimiento
+    2. Leo el mes de nacimiento
+    3. Leo el dia de nacimiento
+    4. Se resta el año de nacimiento al año actual
+    5. Se resta el mes de nacimiento al mes actual
+    6. Si el resultado del paso 5 es negativo, se le resta 1 al resultado del paso 4. Si el resultado es 0 se resta el dia de              nacimiento al dia actual, si el resultado es negativo se le resta 1 al resultado del paso 4.
+    7. Si no se cumplen las condiciones del paso 6, el resultado de la edad es igual al paso 4, pero si se cumplen las condiciones del     paso 6 se le resta 1
+    8. Se muestra el numero indicado en el paso 7 como la edad de la persona
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOMBRE DEL ALGORITMO: "Determinar Par"
+
+ENTRADAS: un número entero
+
+SALIDAS: Un texto que indica si un número es par o no
+
+PASOS: 
+    1. Leer un número entero
+    2. Validar que el número ingresado sea entero usando la operación modulo de 1, de lo contrario volver a solicitarlo 
+    3. Usar la operación modulo de 2 y si el resultado es 0 decimos que el número es par de lo contrario el número es impar
+    
+    
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOMBRE DEL ALGORITMO: "Tiempo de viaje"
+
+ENTRADAS: N tiempos relacionados a los viajes realizados
+
+SALIDAS: Tiempo de tramos del viaje en horas  
+
+PASOS:
+    1.Leer los duracion de los tramos en minutos
+    2.Sumar la duracion de los tramos
+    3.Si la duracion del tramo es 0 se deja de pedir tramos
+    4.El resultado de la suma en minutos de los tramos se divide en 60 y el entero de la division es el numero de horas
+    5.Y el residuo de la division son los minutos de la duracion del viaje
+    6.Muestras el viaje en formato de horas con minutos
+    
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOMBRE DEL ALGORITMO: "Parte decimal"
+
+ENTRADAS: Numero real
+
+SALIDAS: Resultado del numero decimal
+
+PASOS:
+    1: Pedir al usuario un numero real
+    2. Verificar si el numero es positivo o negativo
+    3. Si el numero es positivo restar su numero entero, si es un numero negativo se suma su
+    numero entero
+    4. Mostrar el resultado del paso anterior y este sera la parte decimal del numero real
